@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Blog;
 
 class BlogController extends Controller
@@ -17,6 +16,7 @@ class BlogController extends Controller
         return view('create');
     }
 
+
     public function store()
     {
         $this->validate(request(), [
@@ -26,6 +26,8 @@ class BlogController extends Controller
         Blog::create(request()->only('name'));
         return redirect(route('index'));
     }
+
+        
 
     public function index()
     {

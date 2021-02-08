@@ -5,8 +5,7 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">Detalle del Blog<b>{{ $blog->name }}</b></div>
-                    <a href="{{ route('index') }}" class="btn btn-info text-
-    white">Volver al listado de blogs</a>
+                    <a href="{{ route('index') }}" class="btn btn-info text-white">Volver al listado de blogs</a>
                     <a href="{{ route('createPost', ['blogId' => $blog->id]) }}" class="btn btn-success btn-block mt-3">Añadir
                         un nuevo post</a>
                     <table class='table'>
@@ -31,8 +30,7 @@
                             @empty
                                 <tr>
                                     <td colspan="3">
-                                        <p class="alert alert-warning text-
-            center">No hay blogs</p>
+                                        <p class="alert alert-warning text-center">No hay blogs</p>
                                     </td>
                                 </tr>
                             @endforelse

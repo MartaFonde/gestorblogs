@@ -25,7 +25,7 @@
                                     <td>{{$blog->id}}</td>
                                     <td width="40%">{{$blog->name}}</td>
                                     <td>{{$blog->posts_count}}</td>
-                                    <td><a href="{{route('show',['id'=>$blog->id])}}" class="btn btn-dark">Ir al blog </a></td>
+                                    <td><a href="{{route('show',['id'=>$blog->id])}}" class="btn btn-dark">Ir al blog </a></td>     //da error aqui
                                     <td>
                                         <form method="POST" action="{{route('destroy',['id'=>$blog->id])}}">
                                         @method ("DELETE")
